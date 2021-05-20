@@ -1,13 +1,23 @@
 function validate()
 {
+var username=document.getElementById("username").value;
 var password=document.getElementById("password").value;
-if(password=="user")
+if(username=="dark"&& password=="biocbio")
 {
-    alert("Mot De passe correct ! ");
-    return true;
-}else{
-    do {    alert("Mauvais mot de passe refresh la page !"); } while (true);
+    alert("login succesfully");
+    return window.location.href="sombre.html";   
+    
+
+}
+else
+{
+    alert("login failed");
 }
 
 
 }
+
+Parse.User.logIn(username, password, {
+    success: function(user) {
+window.location.href="sombre.html";          
+    }});
