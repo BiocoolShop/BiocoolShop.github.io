@@ -10,11 +10,12 @@
 }
 
 
-.home-container {
+html {
     min-height: 100vh;
     background: url(/image/prise-de-commande-2.jpg);
     background-size: cover;
 }
+
 
 .header {
     position: absolute;
@@ -299,6 +300,7 @@
 
 .footer {
     min-height: 100px;
+    color: white;
     display: flex;
     align-items: center;
     margin-top: 50px;
@@ -308,11 +310,12 @@
 }
 
 .copyrights {
+    color: white;
     padding-right: 20px;
 }
 
 .conditions {
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: 600;
 }
