@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <title>BioCool</title>
+</head>
+
+<body>
+    <section id="home" class="home-container">
+        <header id="header" class="header">
+            <img src="image/logo.png" alt="biocool" class="logo">
+            <ul class="nav-links">
+                <li>
+                    <a href="#" data-text="Accueil">Accueil</a>
+                </li>
+                <li>
+                    <a href="#best-sales" data-text="Nos meilleures ventes">Nos meilleures ventes</a>
+                </li>
+                <li>
+                    <a href="#Legume" data-text="Nos Aliments">Nos Aliments</a>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+        <div class="landing">
+            <h1 class="big-title">BioCool est ta santé est plus cool</h1>
+            <a href="#delivery" class="delivery-link">
+                <span class="scroll-text" data-text="Scroll">Scroll</span>
+                <i class="scroll-icon fas fa-angle-down"></i>
+            </a>
+        </div>
+    </section>
+
+<section class="basdepage">
+    <section id="delivery" class="delivery-container">
+        <div class="shop">
+            <i class="delivery-icon fas fa-store"></i>
+            <p class="box-content">
+                Notre magasin implanté directement en ville ! 
+            </p>
+        </div>
+        <div class="withdrawal">
+            <i class="delivery-icon fas fa-people-carry"></i>
+            <p class="box-content">
+                Retrait sur place
+            </p>
+        </div>
+        <div class="delivery">
+            <i class="delivery-icon fas fa-truck"></i>
+            <p class="box-content">
+                Livraison à domicile 
+            </p>
+        </div>
+    </section>
+    <section id="best-sales" class="best-sales-container">
+        <h1 class="section-title">Meilleures ventes</h1>
+        <div class="best-Legume">
+            <a href="/commande/commande.html" class="Legume-box no-grid Legume1">
+                <div class="Legume-bio">
+                    <h1 class="Legume-name">Sandwich Forest</h1>
+                    <h3 class="Legume-price">20$ / unité </h3>
+                </div>
+            </a>
+            <a href="/commande/commande.html" class="Legume-box no-grid Legume2">
+                <div class="Legume-bio">
+                    <h1 class="Legume-name">Smoothie peche</h1>
+                    <h3 class="Legume-price">18$ / unité </h3>
+                </div>
+            </a>
+            <a href="/commande/commande.html" class="Legume-box no-grid Legume3">
+                <div class="Legume-bio">
+                    <h1 class="Legume-name">Jus De Carotte</h1>
+                    <h3 class="Legume-price">25$ / unité</h3>
+                </div>
+            </a>
+            <a href="/commande/commande.html" class="Legume-box no-grid Legume4">
+                <div class="Legume-bio">
+                    <h1 class="Legume-name">Pomme Rouge</h1>
+                    <h3 class="Legume-price">30$ /kg</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="Legume" class="Legume-container">
+        <h1 class="section-title">Nos Aliments</h1>
+        <div class="grid-Legume">
+            <a href="/commande/commande.html" class="Legume-box grid Legume-grid1">
+                <div class="Legume-bio">
+                    <h1 class="Legume-name">Banane </h1>
+                    <h3 class="Legume-price">60$ /kg</h3>
+                </div>
+            </a>
+            <a href="/commande/commande.html" class="Legume-box grid Legume-grid2">
+                <div class="Legume-bio">
+                    <h1 class="Legume-name">Peche</h1>
+                    <h3 class="Legume-price">70$ /kg</h3>
+                </div>
+            </a>
+            <a href="/commande/commande.html" class="Legume-box grid Legume-grid3">
+                <div class="Legume-bio">
+                    <h1 class="Legume-name">Cerise</h1>
+                    <h3 class="Legume-price">40$ /kg</h3>
+                </div>
+            </a>
+            <a href="/commande/commande.html" class="Legume-box grid Legume-grid4">
+                <div class="Legume-bio">
+                    <h1 class="Legume-name">Raisin</h1>
+                    <h3 class="Legume-price">20$ /kg</h3>
+                </div>
+            </a>
+            <a href="/commande/commande.html" class="Legume-box grid Legume-grid5">
+                <div class="Legume-bio">
+                    <h1 class="Legume-name">Pasteque</h1>
+                    <h3 class="Legume-price">40$ /kg</h3>
+                </div>
+            </a>
+            <a href="/commande/commande.html" class="Legume-box grid Legume-grid6">
+                <div class="Legume-bio">
+                    <h1 class="Legume-name">Maïs</h1>
+                    <h3 class="Legume-price">30$ /kg</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+
+</section>
+
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; 2021 - BioCool</span>
+        <a href="#" class="conditions">Condition général d'utilisation</a>
+        <a href="#" class="conditions">Contact</a>
+    </footer>
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>

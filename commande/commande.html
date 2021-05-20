@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/commande/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <title>BioCool</title>
+</head>
+
+<body>
+    <section id="home" class="home-container">
+        <header id="header" class="header">
+            <img src="/image/logo.png" alt="biocool" class="logo">
+            <ul class="nav-links">
+                <li>
+                    <a href="/index.html" data-text="Retour au achat">Retour au achat</a>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+
+        <div class="landing">
+            <h1 class="big-title">Intérréser ?</h1>
+            <h2 class="livraison">choisisez votre moyens de livraison -> </h2>
+            </a>
+                    
+        <section class="download">
+            <div class="buttons">
+                <div class="container">
+                    <a href="" class="btn effect01" target="_blank"><span>Livraison a domicile</span></a>
+                </div>
+              </div>
+              
+        </section>
+        <section class="download">
+            <div class="buttons">
+                <div class="container">
+                    <a href="" class="btn effect01" target="_blank"><span>je viens Sur Place</span></a>
+                </div>
+              </div>
+              
+        </section>
+        </div>
+    </section>
+
+
+    </section>
+
+
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; 2021 - BioCool</span>
+        <a href="#" class="conditions">Condition général d'utilisation</a>
+        <a href="#" class="conditions">Contact</a>
+    </footer>
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>
