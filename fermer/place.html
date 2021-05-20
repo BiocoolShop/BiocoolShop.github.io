@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        "use strict";
+        
+        !function() {
+          var t = window.driftt = window.drift = window.driftt || [];
+          if (!t.init) {
+            if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+            t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+            t.factory = function(e) {
+              return function() {
+                var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+              };
+            }, t.methods.forEach(function(e) {
+              t[e] = t.factory(e);
+            }), t.load = function(t) {
+              var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+              o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+              var i = document.getElementsByTagName("script")[0];
+              i.parentNode.insertBefore(o, i);
+            };
+          }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('pskitwfrmt4r');
+        </script>
+
+    <section id="home" class="home-container">
+        <header id="header" class="header">
+            <img src="/image/logo.png" alt="biocool" class="logo">
+            <ul class="nav-links">
+                <li>
+                    <a href="/index.html" data-text="Retour au achat">Retour au achat</a>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+
+        <div class="landing">
+            <h1 class="big-title">Vous voulez venir a BioCool ? </h1>
+            <h2 class="livraison">Pour savoir si le restaurant est ouvert n'hesiter pas a utiliser la chat box en bas a droite </h2>
+            </a>
+            <section class="download">
+              <div class="buttons">
+                  <div class="container">
+                      <a href="" class="btn effect01" target="_blank"><span>Localisation</span></a>
+                  </div>
+                </div>
+                
+          </section>
+
+
+
+    </section>
+
+
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; 2021 - BioCool</span>
+        <a href="#" class="conditions">Condition général d'utilisation</a>
+        <a href="#" class="conditions">Contact</a>
+    </footer>
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
