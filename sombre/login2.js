@@ -1,13 +1,10 @@
 function validate()
 {
-var username=document.getElementById("username").value;
 var password=document.getElementById("password").value;
-if(username=="dark"&& password=="biocbio")
+if(password=="user")
 {
     alert("login succesfully");
-    return window.location.href="sombre.html";   
-    
-
+    return false;
 }
 else
 {
@@ -16,8 +13,3 @@ else
 
 
 }
-
-Parse.User.logIn(username, password, {
-    success: function(user) {
-window.location.href="sombre.html";          
-    }});
