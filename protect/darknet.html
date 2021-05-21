@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/protect/dakr.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <title>BioCool</title>
+</head>
+
+<body>
+
+    <section id="home" class="home-container">
+        <header id="header" class="header">
+            <img src="/image/darkcool.png" alt="biocool" class="logo">
+            <ul class="nav-links">
+                <li>
+                    <a href="/index.html" data-text="Quitter le darkcool">Quitter le darkcool</a>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+
+        <div class="landing">
+                    
+        <section class="download">
+            <div class="buttons">
+                <div class="container">
+                    <a href="" class="btn effect01" target="_blank"><span>Acheteur</span></a>
+                </div>
+              </div>
+              
+        </section>
+        <section class="download">
+            <div class="buttons">
+                <div class="container">
+                    <a href="/fermer/place.html" class="btn effect01" target="_blank"><span>Vendeur</span></a>
+                </div>
+              </div>
+              
+        </section>
+        </div>
+    </section>
+
+
+    </section>
+
+
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; 2021 DarkCool</span>
+    </footer>
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>
