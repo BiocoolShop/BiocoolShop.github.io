@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Livraison</title>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_xJoFVMmlDoWU2QTLUXEWY");
+    })();
+    </script>
+</head>
+<body>
+
+
+     
+    <section id="home" class="home-container">
+        <header id="header" class="header">
+            <img src="/image/logo.png" alt="biocool" class="logo">
+            <ul class="nav-links">
+                <li>
+                    <a href="/commande/commande.html" data-text="Retour">retour</a>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+
+        <div class="landing">
+                    
+
+    </section>
+
+    <form class="box">
+
+        <h1>
+            Livraison Biocool
+        </h1>
+        <input class="commande1" type="text" name="" placeholder="numéro de téléphone (In Game)" id="toName">
+        <input class="commande1" type="text" name="" placeholder="Votre nom" id="fromName">
+        <input class="commande" type="text" name="" placeholder="Entrée votre commande" id="msg">
+        <input type="button" value="Envoyer"  onclick="sendMail()">
+        
+        
+
+        </form>
+        
+
+
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; 2021 DarkCool</span>
+    </footer>
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
