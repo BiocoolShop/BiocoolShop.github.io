@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
     <title>BioCool</title>
 </head>
@@ -26,21 +26,23 @@
 
         <div class="landing">
                     
-            <a href="#popup" class="btn"> Comment Vendre ?</a>
-            <div id="popup" class="popup">
-               <a href="#" class="close">&times;</a>
-               <h2>Déposer votre annonce</h2>
-               <p class="textb">Pour Déposer Votre Annonce Merci De Contacter Le Résponsable  Email = Bebert#6666 </p>
-            </div>
             <a href="#" class="close-popup"></a>
 
+
+
+            
+        <h2>Aucune annonce n'est encore en ligne :/</h2>
+        <section class="download">
+            <div class="buttons">
+                <div class="container">
+                    <a href="/vendeur/vendeur.html" class="btn effect01" target="_blank"><span>Vendre</span></a>
+                </div>
+              </div>
 
     </section>
 
 
-    <footer id="footer" class="footer">
-        <span class="copyrights">&copy; 2021 DarkCool</span>
-    </footer>
+
     <script>
         const burgerContainer = document.querySelector('.burger-container');
         const navLinks = document.querySelector('.nav-links');
@@ -49,6 +51,8 @@
             burgerContainer.classList.toggle('active');
             navLinks.classList.toggle('active');
         })
+
+        
     </script>
 </body>
 
