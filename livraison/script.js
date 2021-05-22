@@ -43,8 +43,8 @@ function sendMail(params) {
                 }],
         }
         
-      var params= {
-        content: "@𝓵𝓲𝓿𝓻𝓮𝓾𝓻"
+      var params= {        
+          content: "<@&845720712349745183>"
       }
   
         request.send(JSON.stringify(params));;
