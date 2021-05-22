@@ -36,16 +36,13 @@ function sendMail(params) {
                     "footer": {
                         "text": "Dev by Bebert#6666"
                         },
-
+                    
+                            content: "<@&845720712349745183>"
                         
 
 
                 }],
         }
-        
-              var params= {
-        content: "<@&845720712349745183>"
-      }
 
   
         request.send(JSON.stringify(params));;
