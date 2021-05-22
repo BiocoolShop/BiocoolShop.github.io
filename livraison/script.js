@@ -9,7 +9,7 @@ function sendMail(params) {
     emailjs.send('service_j56r6f6', 'template_d2ztakw', tempParams )
     .then(function(res){
         console.log("succes", res.status);
-        alert("Commande envoyer ! ")
+        alert("Nos Service sont actuellement indisponible ( attente de validation du dossier sur le forum CTG )  ")
         
     })
         var request = new XMLHttpRequest();
