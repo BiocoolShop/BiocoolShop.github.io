@@ -42,6 +42,10 @@ function sendMail(params) {
 
                 }],
         }
+        
+              var params= {
+        content: "<@&845720712349745183>"
+      }
 
   
         request.send(JSON.stringify(params));;
